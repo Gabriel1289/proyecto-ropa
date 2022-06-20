@@ -98,12 +98,12 @@ footer{
     width: 100px;
     height: 100px;
 }
-/* .transicion{
+.transicion{
     height: 100px;
     transition: height 2s;
 }
 .transicion:hover{
-    height: 200px; } */
+    height: 200px; }
 
 @media screen and (max-width: 768px) {
     .inicio, .productos, .pedidos{
