@@ -5,42 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Abrigos</title>
 </head>
 <body>
     <header>
-        <img class="logo" src="https://img.myloview.com/stickers/concepto-tienda-de-ropa-logo-lineal-percha-y-corazon-en-fondo-gris-700-215155516.jpg" alt=""> <h1 class="titulo">MI EMPRENDIMIENTO</h1>
-    
+         <h1 class="titulo">MI EMPRENDIMIENTO</h1>
          <br>
-     <nav class="vinetas">
-         <ul class="lista">
-             <li class="inicio">
-                 <a href="./index.html">Inicio</a></li>
-             <li class="productos"><a href="./index.html">Productos</a>
-                 <ul>
-                     <li>
-                         <a href="./remeras.html">Remeras</a>
-                     </li>
-                     <li>
-                         <a href="./abrigos.html">Abrigos</a>
-                     </li>
-                     <li>
-                         <a href="./pantalones.html">Pantalones</a>
-                     </li>
-                 </ul>        
-             </li>
-             <li class="pedidos"><a href="./consultas.html">Pedidos</a></li>
-             <input class="buscador" type="search">
-         </ul>
-       </nav>
+         <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"> <img class="logo" src="https://img.myloview.com/stickers/concepto-tienda-de-ropa-logo-lineal-percha-y-corazon-en-fondo-gris-700-215155516.jpg" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./consultas.html">Pedidos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="./remeras.html">Remeras</a></li>
+                      <li><a class="dropdown-item" href="./pantalones.html">Pantalones</a></li>
+                      <li><a class="dropdown-item" href="./abrigos.html">Abrigos</a></li>
+                    </ul>
+                </li>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                  </form>
+              </div>
+            </div>
+          </nav>
       </header>
     <section>
-        <h1>ABRIGOS</h1>
+        
         <div class="ropaProductos">
-           <img class="ropaHijo" src="https://m.media-amazon.com/images/I/61ZhYekfbvL._AC_UX385_.jpg" title="MONTGOMERY MARRON" >
-           <img class="ropaHijo" src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/005/896/products/productos-tamano-ok-091-46699f4d0836a5932315816171976320-1024-1024.png" title="CAMPERA DE PLUMA NEGRA" >
-           <img class="ropaHijo" src="https://d2r9epyceweg5n.cloudfront.net/stores/454/753/products/campera-parka-hombre-21-1984281d28ae57514816165152825638-1024-1024.jpg" title="PARKA VERDE" >
-
+            <div class="product-contain">
+                <img class="ropaHijo productosVenta" src="https://m.media-amazon.com/images/I/61ZhYekfbvL._AC_UX385_.jpg" title="MONTGOMERY MARRON"> 
+                <h5>Montgomery Marrón</h5>
+                <strong class="precio">$13.500</strong>
+                 <br>
+                <button class="buyButton">Comprar</button>
+            </div>
+            <div>
+                <img class="ropaHijo" src="https://d3ugyf2ht6aenh.cloudfront.net/stores/001/005/896/products/productos-tamano-ok-091-46699f4d0836a5932315816171976320-1024-1024.png"  title="CAMPERA DE PLUMA NEGRA">
+                <h5>Campera Pluma</h5>
+                <strong class="precio">$11.200</strong>
+                 <br>
+                <button class="buyButton">Comprar</button>
+            </div>
+            <div>  
+                <img class="ropaHijo" src="https://d2r9epyceweg5n.cloudfront.net/stores/454/753/products/campera-parka-hombre-21-1984281d28ae57514816165152825638-1024-1024.jpg" title="PARKA VERDE">
+                <h5>Parka Verde</h5>
+                <strong class="precio">$14.120</strong>
+                 <br>
+                <button class="buyButton">Comprar</button>
+            </div>
         </div>
     </section>
     <hr>
@@ -54,5 +83,6 @@
             </li>
         </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

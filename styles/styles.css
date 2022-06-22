@@ -7,13 +7,13 @@ h1{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 body{
-    background-color: #FAC18F;
+    background-color: #ffe0b2;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 header{
-    border: solid #E6C3A3;
+    border: solid #cbae82;
     padding: 25px;
-    background-color: #E6C3A3;
+    background-color:#cbae82;
 }
 
 .inicio{
@@ -44,7 +44,7 @@ ul ul {
  }
  
 nav{
-    background-color: #E08F5C;
+    background-color: #cbae82;
     padding: 30px;
     position: sticky
 }
@@ -53,7 +53,15 @@ li{
     display: inline;
 }
 
+.buyButton {
+border-radius: 10px;
+}
 
+.buyButton:hover {
+    transition: all 1s;
+    background-color: #cbae82;
+    border-radius: 15px;
+}
 .pedidos{
   font-size: 30px;
 }
@@ -66,8 +74,9 @@ li{
     justify-content: space-evenly;
 }
 .buscador{
-    background-color: #E08F5C;
+    background-color: #ffe0b2;
 }
+
 
 .ropa{
     display: grid;
@@ -80,11 +89,16 @@ li{
 .ropaHijo{
    max-width: 100%;
     max-height: 50%;
+    border: solid 5px #cbae82 ;
 }
 .ropaProductos{
    display: grid;
    grid-template-columns: 25% 25% 25%;
 }
+.submenu{
+    padding: 10px solid red;
+}
+
 .fb{
     width: 50px; height: 50px;
 }
