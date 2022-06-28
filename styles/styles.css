@@ -105,12 +105,21 @@ footer{
     width: 100px;
     height: 100px;
 }
-.transicion{
-    height: 100px;
-    transition: height 2s;
+
+.enviar{
+   border-radius: 5px; 
+   margin-left: 20px;
 }
-.transicion:hover{
-    height: 200px; }
+.enviar:hover{
+    transition: all 1s;
+    background-color: #cbae82;
+    border-radius: 2px;
+}
+.form {
+    border-radius: 05px ;
+    border: 02px gray; 
+}
+
 
 @media screen and (max-width: 768px) {
     .inicio, .productos, .pedidos{
