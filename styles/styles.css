@@ -1,164 +1,175 @@
-h1{
-    display: inline;
-}
-.titulo{
-    margin-left: 500px;
-    color: #1F9094;  
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-}
-body{
-    background-color: #ffe0b2 !important;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-header{
-    border: solid #cbae82;
-    padding: 25px;
-    background-color:#cbae82;
+footer {
+  background-color: #E6C3A3;
 }
 
-.inicio{
-    font-size: 30px;
-}
-.lista{
-    list-style: none;
-    font-size: 0;
+h1 {
+  display: inline;
 }
 
-.productos{
-    display: inline-block;
-    position: relative;
-   font-size: 30px
+.titulo {
+  margin-left: 500px;
+  color: #1F9094;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: #ffe0b2 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  border: solid #cbae82;
+  padding: 25px;
+  background-color: #cbae82;
+}
+
+.inicio {
+  font-size: 30px;
+}
+
+.lista {
+  list-style: none;
+  font-size: 0;
+}
+
+.productos {
+  display: inline-block;
+  position: relative;
+  font-size: 30px;
 }
 
 ul ul {
-    position: absolute;
-    display: none;
-
- }
- ul ul li {
-    display: block;
- }
-
- ul li:hover ul  {
-    display:block;
- }
- 
-nav{
-    background-color: #cbae82;
-    padding: 1fr;
-    position: sticky
+  position: absolute;
+  display: none;
+}
+ul ul li:hover {
+  display: block;
 }
 
-li{
-    display: inline;
+ul li:hover ul {
+  display: block;
+}
+
+nav {
+  background-color: #cbae82;
+  padding: 1fr;
+  position: sticky;
+}
+
+li {
+  display: inline;
 }
 
 .buyButton {
-border-radius: 10px;
+  border-radius: 10px;
 }
 
 .buyButton:hover {
-    transition: all 1s;
-    background-color: #cbae82;
-    border-radius: 15px;
+  transition: all 1s;
+  background-color: #cbae82;
+  border-radius: 15px;
 }
-.pedidos{
+
+.pedidos {
   font-size: 30px;
 }
-.nuestroig{
-    margin-left: 200px;
+
+.nuestroig {
+  margin-left: 200px;
 }
 
-
-.buscador{
-    background-color: #ffe0b2;
+.buscador {
+  background-color: #ffe0b2;
 }
 
-
-.ropa{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto auto;
-    grid-column-gap: 1%;
-    grid-row-gap: 20px ;
-   
-}
-.ropaHijo{
-   max-width: 100%;
-    max-height: 45%;
-    border: solid 5px #cbae82 ;
-}
-.ropaProductos{
-   display: grid;
-   grid-template-columns: 25% 25% 25%;
-}
-.fb{
-    width: 50px; height: 50px;
-}
-.ig{
-    width: 50px; height: 50px;
-}
-footer{
-    background-color:#E6C3A3 ;
-}
-.logo{
-    width: 100px;
-    height: 100px;
+.ropa {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-column-gap: 1%;
+  grid-row-gap: 20px;
 }
 
-.enviar{
-   border-radius: 5px; 
-   margin-left: 20px;
+.ropaHijo {
+  max-width: 100%;
+  max-height: 45%;
+  border: solid 5px #cbae82;
 }
-.enviar:hover{
-    transition: all 1s;
-    background-color: #cbae82;
-    border-radius: 2px;
+
+.ropaProductos {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
 }
+
+.fb {
+  width: 50px;
+  height: 50px;
+}
+
+.ig {
+  width: 50px;
+  height: 50px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.enviar {
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.enviar:hover {
+  transition: all 1s;
+  background-color: #cbae82;
+  border-radius: 2px;
+}
+
 .form {
-    border-radius: 05px ;
-    border: 02px gray; 
+  border-radius: 5px;
+  border: 2px gray;
 }
-
 
 @media screen and (max-width: 768px) {
-    .inicio, .productos, .pedidos{
-        font-size: 20px;
-        
-    }
-    header{
-        margin-right: 0px;
-        margin-left: 0px;
-        padding-right: 0;
-    }
-    nav{
-        padding-right: 0;
-        padding: 10px;
-        margin-right: 0px;
-    }
-    .buscador{
-        display: none;
-    }
-    .titulo{
-        margin-left: 0;
-    }
-    .lista{
-        display: flex;
-        justify-content: space-around;
-    }
-    .ropa{
-        display: grid;
-        grid-template-columns: auto auto ;
-        grid-template-rows: auto auto auto auto;
-        grid-column-gap: 0.3fr;
-        grid-row-gap: 10px;
-       
-    }
-    
-    .ropaHijo{
-        height: 100%;
-        max-width: 100%;
-    }
-    .lista{ 
-        font-size: 10px;
-    }
+  .inicio, .productos, .pedidos {
+    font-size: 20px;
+  }
+  header {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-right: 0;
+  }
+  nav {
+    padding-right: 0;
+    padding: 10px;
+    margin-right: 0px;
+  }
+  .buscador {
+    display: none;
+  }
+  .titulo {
+    margin-left: 0;
+  }
+  .lista {
+    display: flex;
+    justify-content: space-around;
+  }
+  .ropa {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-column-gap: 0.3fr;
+    grid-row-gap: 10px;
+  }
+  .ropaHijo {
+    height: 100%;
+    max-width: 100%;
+  }
+  .lista {
+    font-size: 10px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

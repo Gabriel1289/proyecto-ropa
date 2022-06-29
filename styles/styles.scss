@@ -1,0 +1,114 @@
+@import "./footer" ;
+@import "./header" ;
+@import "./colors" ;
+
+
+
+.buyButton {
+border-radius: 10px;
+}
+
+.buyButton:hover {
+    transition: all 1s;
+    background-color: #cbae82;
+    border-radius: 15px;
+}
+.pedidos{
+  font-size: 30px;
+}
+.nuestroig{
+    margin-left: 200px;
+}
+
+
+.buscador{
+    background-color: #ffe0b2;
+}
+
+
+.ropa{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-column-gap: 1%;
+    grid-row-gap: 20px ;
+   
+}
+.ropaHijo{
+   max-width: 100%;
+    max-height: 45%;
+    border: solid 5px #cbae82 ;
+}
+.ropaProductos{
+   display: grid;
+   grid-template-columns: 25% 25% 25%;
+}
+.fb{
+    width: 50px; height: 50px;
+}
+.ig{
+    width: 50px; height: 50px;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.enviar{
+   border-radius: 5px; 
+   margin-left: 20px;
+}
+.enviar:hover{
+    transition: all 1s;
+    background-color: #cbae82;
+    border-radius: 2px;
+}
+.form {
+    border-radius: 05px ;
+    border: 02px gray; 
+}
+
+
+@media screen and (max-width: 768px) {
+    .inicio, .productos, .pedidos{
+        font-size: 20px;
+        
+    }
+    header{
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-right: 0;
+    }
+    nav{
+        padding-right: 0;
+        padding: 10px;
+        margin-right: 0px;
+    }
+    .buscador{
+        display: none;
+    }
+    .titulo{
+        margin-left: 0;
+    }
+    .lista{
+        display: flex;
+        justify-content: space-around;
+    }
+    .ropa{
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto auto auto;
+        grid-column-gap: 0.3fr;
+        grid-row-gap: 10px;
+       
+    }
+    
+    .ropaHijo{
+        height: 100%;
+        max-width: 100%;
+    }
+    .lista{ 
+        font-size: 10px; 
+    }
+}
