@@ -1,0 +1,12 @@
+
+$redes: (
+twitter: blue
+instagram: orange
+facebook: lightblue
+);
+
+@each $red, $color in $redes {
+    .nuestro-#{$red}  {
+        background-color: $color ;
+    }
+}

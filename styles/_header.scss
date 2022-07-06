@@ -15,7 +15,7 @@ body{
 }
 header{
     border: solid #cbae82;
-    padding: 25px;
+    
     background-color:#cbae82;
 }
 
@@ -47,12 +47,13 @@ ul{
   ul li:hover ul  {
     display:block;
  }  
+
+
+li{
+    display: inline;
+}
 nav{
     background-color: #cbae82;
     padding: 1fr;
     position: sticky
-}
-
-li{
-    display: inline;
 }
